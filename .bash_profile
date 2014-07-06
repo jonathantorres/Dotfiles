@@ -6,3 +6,4 @@ PATH="$PATH:$HOME/.rvm/bin" # RVM
 
 # Aliases
 alias gulp="gulp --require coffee-script/register"
+alias mongod="mongod --config /usr/local/etc/mongod.conf"
