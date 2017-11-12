@@ -21,5 +21,5 @@ cp -R ~/.oh-my-zsh/custom/ ~/dev/dotfiles/.oh-my-zsh/custom/
 ## Sublime Text settings
 Run the `st` script to copy your current Sublime Text setting, and keep them on this repo so that I don't forget them!
 ```bash
-cd ~/dotfiles/st && ./st.sh
+cd ~/dev/dotfiles/st && ./st.sh
 ```
