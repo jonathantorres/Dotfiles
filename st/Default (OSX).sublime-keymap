@@ -1,0 +1,7 @@
+[
+    { "keys": ["super+b"], "command": "toggle_side_bar" },
+    { "keys": ["super+k", "super+b"], "command": "build" },
+    { "keys": ["ctrl+shift+space"], "command": "import_namespace" },
+    { "keys": ["ctrl+shift+i"], "command": "find_use" },
+    { "keys": ["ctrl+shift+d"], "command": "goto_definition_scope" }
+]
