@@ -5,7 +5,12 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
+#ZSH_THEME="avit"
+ZSH_THEME="afowler"
+#ZSH_THEME="arrow"
+#ZSH_THEME="crunch"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,8 +53,10 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
-
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Users/jonathantorres/.composer/vendor/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,3 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# added by travis gem
+[ -f /Users/jonathantorres/.travis/travis.sh ] && source /Users/jonathantorres/.travis/travis.sh
+
