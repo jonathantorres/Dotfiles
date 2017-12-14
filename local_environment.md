@@ -100,8 +100,3 @@ To list any services running, run:
 ```bash
 brew services list
 ```
-
-
-
-
-
