@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env zsh
 copy_settings () {
     version='3'
     if [[ -n $1 && $1 == '2' ]]; then
