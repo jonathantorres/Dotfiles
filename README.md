@@ -28,3 +28,8 @@ cd ~/dev/dotfiles/st && ./st.sh
 ```bash
 cp ~/.gitconfig ~/dev/dotfiles/.gitconfig
 ```
+
+## To-do's
+- Make a script to add a laravel site, it will copy a predefined string and add it to the end of `/usr/local/etc/nginx/servers/laravel.conf`, I should specify the name of the project.
+- Add a script to sync my `nginx.conf` file and add it to this repo.
+- Add a script to sync all the files in `/usr/local/etc/nginx/servers/*` and add them here.
