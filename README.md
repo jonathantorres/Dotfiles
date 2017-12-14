@@ -1,5 +1,5 @@
 # Dotfiles
-My zsh settings. I just want to type less. Treat this repo as if it's your home directory.
+My zsh settings amongst other things. I just want to type less and have some stuff already pre-configured. Treat this repo as if it's your home directory.
 
 ## Installation
 Clone the repo anywhere you want. I have it copied on `~/dev/dotfiles`.
