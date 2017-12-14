@@ -7,26 +7,25 @@ Clone the repo anywhere you want. I have it copied on `~/dev/dotfiles`.
 git clone git@github.com:jonathantorres/dotfiles.git
 ```
 
-## Sync oh my zsh settings
-Copy my zsh settings file.
+## Create symlinks
+Run the script to create the symlinks for the scripts that sync my settings.
 ```bash
-cp ~/.zshrc ~/dev/dotfiles/.zshrc
+./init.zsh
 ```
 
-Copy my custom folder. Here I can store my plugins and my aliases.
+## Sync oh my zsh settings
 ```bash
-cp -R ~/.oh-my-zsh/custom/ ~/dev/dotfiles/.oh-my-zsh/custom/
+sync-zsh
 ```
 
 ## Sync Sublime Text settings
-Run the `st` script to copy your current Sublime Text settings, and keep them on this repo so that I don't forget them!
 ```bash
-cd ~/dev/dotfiles/st && ./st.sh
+sync-st
 ```
 
 ## Sync git settings
 ```bash
-cp ~/.gitconfig ~/dev/dotfiles/.gitconfig
+sync-git
 ```
 
 ## To-do's
