@@ -7,25 +7,20 @@ Clone the repo anywhere you want. I have it copied on `~/dev/dotfiles`.
 git clone git@github.com:jonathantorres/dotfiles.git
 ```
 
-## Create symlinks
-Run the script to create the symlinks for the scripts that sync my settings.
+## Create symlink
+Run the script to create the symlink for the script `sync.zsh`.
 ```bash
 ./init.zsh
 ```
+This script will do the following:
+- Sync oh my zsh settings
+- Sync Sublime Text settings
+- Sync git settings
+- Sync nginx configuration files
 
-## Sync oh my zsh settings
+## Run the sync script
 ```bash
-sync-zsh
-```
-
-## Sync Sublime Text settings
-```bash
-sync-st
-```
-
-## Sync git settings
-```bash
-sync-git
+sync
 ```
 
 ## To-do's
