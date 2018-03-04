@@ -1,5 +1,6 @@
 {
 	"bold_folder_labels": true,
+	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"detect_indentation": true,

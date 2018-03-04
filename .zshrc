@@ -28,7 +28,7 @@ ZSH_THEME="afowler"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -53,17 +53,18 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/Users/jonathantorres/.composer/vendor/bin:$PATH"
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export GOPATH="$HOME"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+#export PATH="/Users/jonathantorres/.composer/vendor/bin:$PATH"
+#export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+#export PATH="/usr/local/sbin:$PATH"
+#export PATH="/usr/local/opt/sqlite/bin:$PATH"
+#export GOPATH="$HOME"
+#export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -86,7 +87,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# added by travis gem
-[ -f /Users/jonathantorres/.travis/travis.sh ] && source /Users/jonathantorres/.travis/travis.sh
-
+alias py="python3"
