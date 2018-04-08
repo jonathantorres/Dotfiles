@@ -11,6 +11,7 @@ st_version='3'
 cp ~/Library/Application\ Support/Sublime\ Text\ $st_version/Packages/User/Preferences.sublime-settings ~/dev/dotfiles/st
 cp ~/Library/Application\ Support/Sublime\ Text\ $st_version/Packages/User/Default\ \(OSX\).sublime-keymap ~/dev/dotfiles/st
 echo "Copied settings from Sublime Text $st_version"
+python3 ~/dev/dotfiles/st_packages.py
 
 # Sync nginx
 cp /usr/local/etc/nginx/nginx.conf ~/dev/dotfiles/nginx/nginx.conf
