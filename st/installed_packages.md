@@ -1,7 +1,7 @@
 # Installed Packages on Sublime Text 3
 List of the packages currently installed on my copy of Sublime Text 3.
+- A File Icon
 - ApplySyntax
-- Babel
 - Blade Snippets
 - BracketHighlighter
 - DocBlockr
@@ -10,25 +10,26 @@ List of the packages currently installed on my copy of Sublime Text 3.
 - Emmet
 - Git
 - GitGutter
-- GoSublime
 - HTML Snippets
 - HTML5
 - HTMLAttributes
 - JavaScript Snippets
 - JavaScriptNext - ES6 Syntax
 - jQuery
-- jQuery Snippers pack
+- jQuery Snippets pack
 - Laravel Blade Highlighter
 - Laravel Blade Spacer
 - Markdown Preview
 - Material Theme
+- nginx
 - Package Control
+- PackageResourceViewer
 - PHP Companion
+- Sass
 - Seti_UI
 - SFTP
-- SideBAREnhancements
+- SideBarEnhancements
 - SublimeLinter
-- Syntax Highlighting for Sass
 - Theme - Afterglow
 - TypeScript
 - Vue Syntax Highlight
