@@ -19,7 +19,7 @@ List of the packages currently installed on my copy of Sublime Text 3.
 - jQuery Snippets pack
 - Laravel Blade Highlighter
 - Laravel Blade Spacer
-- Markdown Preview
+- MarkdownPreview
 - Material Theme
 - nginx
 - Package Control
