@@ -54,7 +54,8 @@ plugins=(git)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-#export PATH="/Users/jonathantorres/.composer/vendor/bin:$PATH"
+export PATH="/Users/jonathantorres/Library/Python/3.6/bin:$PATH"
+export PATH="/Users/jonathantorres/.composer/vendor/bin:$PATH"
 #export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 #export PATH="/usr/local/sbin:$PATH"
 #export PATH="/usr/local/opt/sqlite/bin:$PATH"
