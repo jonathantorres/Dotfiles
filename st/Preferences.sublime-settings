@@ -14,7 +14,6 @@
 		".hg",
 		"CVS",
 		".sass-cache",
-		"node_modules",
 		".idea"
 	],
 	"font_size": 14,
