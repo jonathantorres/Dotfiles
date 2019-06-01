@@ -1,8 +1,9 @@
-#! /usr/bin/env zsh
+#! /usr/bin/env bash
 
-if [[ -f /usr/local/bin/sync ]]; then
-    rm -f /usr/local/bin/sync
+if [[ -f "$HOME/bin/sync" ]]; then
+    rm -f "$HOME/bin/sync"
 fi
 
-ln -s ~/dev/dotfiles/sync.zsh /usr/local/bin/sync
+ln -s ~/dev/dotfiles/sync.sh ~/bin/sync
 echo 'Symlink created!';
+
