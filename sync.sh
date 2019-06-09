@@ -1,17 +1,16 @@
-#! /usr/bin/env zsh
+#! /bin/bash
 
-# Sync zsh: Copy my zsh settings file.
-cp ~/.zshrc ~/dev/dotfiles/.zshrc
-# Copy my custom folder. Here I can store my plugins and my aliases.
-cp -R ~/.oh-my-zsh/custom/ ~/dev/dotfiles/.oh-my-zsh/custom/
-echo "zsh settings are now synced.";
+# Sync bash: Copy bash settings file.
+cp ~/.bashrc ~/dev/dotfiles/.bashrc
+cp ~/.bash_profile ~/dev/dotfiles/.bash_profile
+echo "bash settings are now synced.";
 
 # Sync sublime text
 st_version='3'
 cp ~/Library/Application\ Support/Sublime\ Text\ $st_version/Packages/User/Preferences.sublime-settings ~/dev/dotfiles/st
 cp ~/Library/Application\ Support/Sublime\ Text\ $st_version/Packages/User/Default\ \(OSX\).sublime-keymap ~/dev/dotfiles/st
 echo "Copied settings from Sublime Text $st_version"
-php ~/dev/dotfiles/st_packages.php
+php ~/dev/dotfiles/st/st_packages.php
 
 # Sync nginx
 cp /usr/local/etc/nginx/nginx.conf ~/dev/dotfiles/nginx/nginx.conf
