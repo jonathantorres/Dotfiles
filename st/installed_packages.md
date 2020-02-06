@@ -10,7 +10,6 @@ List of the packages currently installed on my copy of Sublime Text 3.
 - Emmet
 - Git
 - GitGutter
-- GoSublime
 - HTML Snippets
 - HTML5
 - HTMLAttributes
@@ -19,6 +18,7 @@ List of the packages currently installed on my copy of Sublime Text 3.
 - jQuery Snippets pack
 - Laravel Blade Highlighter
 - Laravel Blade Spacer
+- MarkdownPreview
 - Material Theme
 - nginx
 - Package Control
