@@ -20,5 +20,5 @@ This script will do the following:
 
 ## Run the sync script
 ```bash
-sync
+dotsync
 ```
