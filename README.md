@@ -7,18 +7,19 @@ Clone the repo anywhere you want. I have it copied on `~/dev/dotfiles`.
 git clone git@github.com:jonathantorres/dotfiles.git
 ```
 
-## Create symlink
-Run the script to create the symlink for the script `sync.sh`.
+## Run the sync script
+Run this script to sync the settings from your home directory into this repository
 ```bash
-./init.sh
+./sync
 ```
+
 This script will do the following:
 - Sync bash settings
 - Sync Sublime Text settings
 - Sync git settings
 - Sync nginx configuration files
 
-## Run the sync script
+If you add the following alias, you can run the sync script from any location on your filesystem
 ```bash
-dotsync
+alias dotsync=~/dev/dotfiles/sync.sh
 ```
