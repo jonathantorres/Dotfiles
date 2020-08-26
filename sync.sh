@@ -3,13 +3,13 @@
 # Sync bash: Copy bash settings file.
 cp ~/.bashrc ~/dev/dotfiles/.bashrc
 cp ~/.bash_profile ~/dev/dotfiles/.bash_profile
+cp ~/.bash_aliases ~/dev/dotfiles/.bash_aliases
 echo "bash settings are now synced.";
 
 # Sync sublime text
-st_version='3'
-cp ~/Library/Application\ Support/Sublime\ Text\ $st_version/Packages/User/Preferences.sublime-settings ~/dev/dotfiles/st
-cp ~/Library/Application\ Support/Sublime\ Text\ $st_version/Packages/User/Default\ \(OSX\).sublime-keymap ~/dev/dotfiles/st
-echo "Copied settings from Sublime Text $st_version"
+cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ~/dev/dotfiles/st
+cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ~/dev/dotfiles/st
+echo "Copied settings from Sublime Text 3"
 php ~/dev/dotfiles/st/st_packages.php
 
 # Sync nginx
@@ -19,4 +19,5 @@ echo "Configuration files from nginx are now synced.";
 
 # Sync git settings
 cp ~/.gitconfig ~/dev/dotfiles/.gitconfig
+cp ~/.gitignore_global ~/dev/dotfiles/.gitignore_global
 echo "git settings are now synced.";
