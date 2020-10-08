@@ -6,6 +6,11 @@ cp ~/.bash_profile ~/dev/dotfiles/.bash_profile
 cp ~/.bash_aliases ~/dev/dotfiles/.bash_aliases
 echo "bash settings are now synced.";
 
+# Sync Vim
+cp ~/.vimrc ~/dev/dotfiles/.vimrc
+cp -R ~/.vim/ ~/dev/dotfiles/.vim/
+echo "vim settings are now synced.";
+
 # Sync sublime text
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ~/dev/dotfiles/st
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ~/dev/dotfiles/st
