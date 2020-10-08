@@ -14,7 +14,8 @@
 		".hg",
 		"CVS",
 		".sass-cache",
-		".idea"
+		".idea",
+		"node_modules"
 	],
 	"font_face": "Hack",
 	"font_size": 15,

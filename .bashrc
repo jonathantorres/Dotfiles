@@ -44,6 +44,10 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
+# Plan9
+export PLAN9="/usr/local/plan9"
+export PATH="$PATH:$PLAN9/bin"
+
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
