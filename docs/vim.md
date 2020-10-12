@@ -51,7 +51,7 @@
 `gt` - switch between tabs  
 
 
-####Other
+#### Other
 `:e {filename}` - open another file in the current buffer  
 `:r {filename}` - read contents of file in the current buffer  
 `^^` - Switching between files  
