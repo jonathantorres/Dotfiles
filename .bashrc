@@ -44,6 +44,9 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
+# Go
+export GOPATH="$HOME/go"
+
 # Plan9
 export PLAN9="/usr/local/plan9"
 export PATH="$PATH:$PLAN9/bin"

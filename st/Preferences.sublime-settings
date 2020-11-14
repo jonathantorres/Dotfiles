@@ -19,6 +19,10 @@
 	],
 	"font_face": "Hack",
 	"font_size": 15,
+	"gravity_highlight_color_blue": true,
+	"gravity_sidebar_header": true,
+	"gravity_tab_height_short": true,
+	"gravity_title_bar": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -28,6 +32,7 @@
 	"indent_to_bracket": true,
 	"line_padding_bottom": 4,
 	"line_padding_top": 4,
+	"sidebar_size_12": true,
 	"tab_size": 4,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
