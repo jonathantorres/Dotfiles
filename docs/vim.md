@@ -34,14 +34,17 @@
 `o` - insert a new line
 `dd` - delete line  
 `yy` - yank (copy) line  
+`c` - change
+`r` - replace
 `p` - put  
+`.` - replace last change or delete
 `u` - undo  
 `^r` - redo  
 
-
 #### Search
 `/pattern` - search for pattern  
-`n` - repeat last search  
+`n` - repeat last search forward
+`N` - repeat last search backwards
 
 
 #### Windows
@@ -60,3 +63,4 @@
 `:r {filename}` - read contents of file in the current buffer  
 `^^` - Switching between files  
 `:ls` - list buffers  
+`:buf {num}` - Switch to the buffer with the number {num}
