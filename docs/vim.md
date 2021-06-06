@@ -10,7 +10,7 @@
 `h` - move left 1 character  
 `l` - move right 1 character  
 `j` - move down 1 line  
-`k` - move up 1 line  
+`k` - move up 1 line 
 `w` - move forward 1 word  
 `b` - move back 1 word  
 `$` - move to the end of the line  
@@ -28,6 +28,10 @@
 
 
 #### Editing
+`x` - delete character
+`a` - insert after the text cursor
+`shift`+`a` - append to the end of the line
+`o` - insert a new line
 `dd` - delete line  
 `yy` - yank (copy) line  
 `p` - put  
