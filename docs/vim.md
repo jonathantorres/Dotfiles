@@ -11,7 +11,8 @@
 `l` - move right 1 character  
 `j` - move down 1 line  
 `k` - move up 1 line 
-`w` - move forward 1 word  
+`w` - move forward 1 word
+`e` - move forward to the end of the next word
 `b` - move back 1 word  
 `$` - move to the end of the line  
 `0` - move to the beginning of the line  
@@ -31,20 +32,25 @@
 `x` - delete character
 `a` - insert after the text cursor
 `shift`+`a` - append to the end of the line
-`o` - insert a new line
+`o` - insert a new line below the cursor
 `dd` - delete line  
+`dw` - delete word
+`d$` - delete to the end of the line
 `yy` - yank (copy) line  
 `c` - change
 `r` - replace
+`R` - replace mode, replaces more than 1 character
 `p` - put  
 `.` - replace last change or delete
 `u` - undo  
 `^r` - redo  
 
+
 #### Search
 `/pattern` - search for pattern  
 `n` - repeat last search forward
 `N` - repeat last search backwards
+`%` - find matching parenthesis or bracket []{}
 
 
 #### Windows
