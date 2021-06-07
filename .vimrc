@@ -28,6 +28,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'darrikonn/vim-gofmt'
 Plugin 'preservim/nerdtree'
 Plugin 'sickill/vim-monokai'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on
+
+nmap <leader>b :NERDTreeToggle<CR>
+nmap <leader>p :CtrlP<CR>
