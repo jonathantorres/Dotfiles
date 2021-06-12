@@ -1,18 +1,19 @@
 #### Emacs
-`C` = ctrl
-`M` = alt
-`S` = shift
-`s` = space
+
+`C` - ctrl
+`M` - alt
+`S` - shift
+`s` - space
 
 `C-x C-c` - Quit emacs
-`C-g` - Quit any command
+`C-g`     - Quit any command
 
-`C-v` - Move down for one screen
-`M-v` - Move up for one screen
-`C-l` - Redraw screen with cursor on the middle
+`C-v`   - Move down for one screen
+`M-v`   - Move up for one screen
+`C-l`   - Redraw screen with cursor on the middle
 `C-x u` - Undo
-`C-/` - Undo
-`C-s` - Incremental search
+`C-/`   - Undo
+`C-s`   - Incremental search
 
 
 #### Movement
@@ -51,7 +52,7 @@
 #### WINDOWS AND FILES
 `C-x 1`   - Just use 1 window, kills all other windows
 `C-x C-f` - Find a file
-`C-x C-s`   - Save the file
+`C-x C-s` - Save the file
 
 
 #### BUFFERS
