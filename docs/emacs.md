@@ -53,6 +53,9 @@
 `C-x 1`   - Just use 1 window, kills all other windows
 `C-x C-f` - Find a file
 `C-x C-s` - Save the file
+`C-x C-w` - Save as
+`C-x C-v` - Replace the file that was just opened (Find alternate file)
+`C-x i`   - Insert file into current location of the cursor
 
 
 #### BUFFERS
@@ -60,3 +63,8 @@
 `C-x b`   - Go to a specific buffer
 `C-x 1`   - Hide all buffers but the current one
 `C-x s`   - Save buffers
+
+#### HELP
+`C-h` - Get help
+`C-h k` - Get information about a keystroke combination
+`C-h f` - Get information about a function
