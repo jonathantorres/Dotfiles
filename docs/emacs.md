@@ -16,7 +16,7 @@
 `C-s`    - Incremental search
 `Insert` - Enter ovewrite mode
 
-`M-x eval-buffer` - Reload configuration
+`M-x eval-buffer`    - Reload configuration
 `M-x eval-last-sexp` - Execute current line of eLisp code
 
 
@@ -87,6 +87,7 @@
 `C-x b`   - Go to a specific buffer
 `C-x 1`   - Hide all buffers but the current one
 `C-x s`   - Save buffers
+`M-x revert-buffer` - Reload a file (good if it was changed on disk)
 
 
 #### HELP
