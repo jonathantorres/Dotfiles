@@ -22,6 +22,10 @@ cp ~/.gitconfig ~/dev/dotfiles/.gitconfig
 cp ~/.gitignore_global ~/dev/dotfiles/.gitignore_global
 echo "git settings are now synced.";
 
+# emacs settings
+cp -Rf ~/.emacs.d/init.el ~/dev/dotfiles/.emacs.d/init.el
+echo "emacs settings are now synced.";
+
 # vim settings
 cp ~/.vimrc ~/dev/dotfiles/.vimrc
 echo "vim settings are now synced.";
