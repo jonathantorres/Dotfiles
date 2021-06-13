@@ -8,12 +8,13 @@
 `C-x C-c` - Quit emacs
 `C-g`     - Quit any command
 
-`C-v`   - Move down for one screen
-`M-v`   - Move up for one screen
-`C-l`   - Redraw screen with cursor on the middle
-`C-x u` - Undo
-`C-/`   - Undo
-`C-s`   - Incremental search
+`C-v`    - Move down for one screen
+`M-v`    - Move up for one screen
+`C-l`    - Redraw screen with cursor on the middle (recenter)
+`C-x u`  - Undo or Redo
+`C-/`    - Undo or Redo
+`C-s`    - Incremental search
+`Insert` - Enter ovewrite mode
 
 
 #### Movement
@@ -35,22 +36,43 @@
 `M-<` - Move to the beginning of the file
 `M->` - Move to the end of the file
 
+`M-}` - Move forward a paragraph
+`M-{` - Move backwards a paragraph 
+
 
 #### Deletion
 `<DEL>`   - Delete the character just before the cursor
-`C-d`     - Delete the next character after the cursor
+`C-d`     - Delete the character under the cursor
 `M-<DEL>` - Kill the word immediately before the cursor
 `M-d`	  - Kill the next word after the cursor
 `C-k`     - Kill from the cursor position to end of line
+`C-w`     - Kill (cuts) the current region (selection)
 `M-k`	  - Kill to the end of the current sentence
 
 
+#### Copying
+`M-w` - Copy the current region
+
+this
+
+
+#### Marking Text
+`C-Space` - Mark a region
+
+
 #### YANK (Paste)
-`C-y` - yank killed text
+`C-y` - yank killed or deleted text
+`M-y` - deletes previous yank and replaces with the next entry in the kill ring
+
+
+#### REPEAT COMMANDS
+`M-n` - (Where `n` is a number. M-5 C-n will move 5 lines down)
 
 
 #### WINDOWS AND FILES
 `C-x 1`   - Just use 1 window, kills all other windows
+`C-x 2`   - New window at the bottom
+`C-x 3`   - New window on the right
 `C-x C-f` - Find a file
 `C-x C-s` - Save the file
 `C-x C-w` - Save as
