@@ -16,6 +16,9 @@
 `C-s`    - Incremental search
 `Insert` - Enter ovewrite mode
 
+`M-x eval-buffer` - Reload configuration
+`M-x eval-last-sexp` - Execute current line of eLisp code
+
 
 #### Movement
 `C-f` - Move forward 1 character
@@ -53,8 +56,6 @@
 #### Copying
 `M-w` - Copy the current region
 
-this
-
 
 #### Marking Text
 `C-Space` - Mark a region
@@ -73,6 +74,7 @@ this
 `C-x 1`   - Just use 1 window, kills all other windows
 `C-x 2`   - New window at the bottom
 `C-x 3`   - New window on the right
+`C-x o`   - Move to another window
 `C-x C-f` - Find a file
 `C-x C-s` - Save the file
 `C-x C-w` - Save as
@@ -85,6 +87,7 @@ this
 `C-x b`   - Go to a specific buffer
 `C-x 1`   - Hide all buffers but the current one
 `C-x s`   - Save buffers
+
 
 #### HELP
 `C-h` - Get help
