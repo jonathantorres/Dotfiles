@@ -40,7 +40,7 @@
 `M->` - Move to the end of the file
 
 `M-}` - Move forward a paragraph
-`M-{` - Move backwards a paragraph 
+`M-{` - Move backwards a paragraph
 
 
 #### Deletion
@@ -75,6 +75,7 @@
 `C-x 2`   - New window at the bottom
 `C-x 3`   - New window on the right
 `C-x o`   - Move to another window
+`C-x +`   - Balance the windows (make them all the same size)
 `C-x C-f` - Find a file
 `C-x C-s` - Save the file
 `C-x C-w` - Save as
@@ -88,6 +89,16 @@
 `C-x 1`   - Hide all buffers but the current one
 `C-x s`   - Save buffers
 `M-x revert-buffer` - Reload a file (good if it was changed on disk)
+
+
+#### CODE
+`C-M-\` - Indent each line between the cursor and the mark
+`M-m`   - Move to the first non-blank character on the line
+`M-^`   - Join this line to the previous one
+`M-a`   - Move to beginning of statement
+`M-e`   - Move to the end of the current statement
+`C-M-a` - Move to the beginning of the body of the function
+`C-M-e` - Move to the end of the body of the function
 
 
 #### HELP
