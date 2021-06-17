@@ -1,5 +1,6 @@
 (tool-bar-mode -1) ;; hide the toolbar
 (global-display-line-numbers-mode) ;; show line numbers
+(global-hl-line-mode +1) ;; highlight the current line
 
 ;; initialize the package manager
 (require 'package)
@@ -37,9 +38,40 @@
   :config
   (load-theme 'acme t))
 
+;; functions to move the current line up or down
+(defun move-line-up ()
+  "Move up the current line."
+  (interactive)
+  (transpose-lines 1)
+  (forward-line -2)
+  (indent-according-to-mode))
+
+(defun move-line-down ()
+  "Move down the current line."
+  (interactive)
+  (forward-line 1)
+  (transpose-lines 1)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(global-set-key [(control super up)]  'move-line-up)
+(global-set-key [(control super down)]  'move-line-down)
+
+;; Go
+(use-package go-mode
+  :ensure t)
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
+
+;; Find PATH changes on the shell
+(use-package exec-path-from-shell
+  :ensure t
+  :init (exec-path-from-shell-initialize))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(acme-theme which-key use-package try)))
+ '(package-selected-packages
+   '(exec-path-from-shell go-mode acme-theme which-key use-package try)))
