@@ -2,6 +2,11 @@
 (global-display-line-numbers-mode) ;; show line numbers
 (global-hl-line-mode +1) ;; highlight the current line
 
+(setq-default indent-tabs-mode nil) ;; no tabs for indentation
+;; set tab width to 4 spaces
+(setq-default tab-width 4)
+(setq-default c-basic-offset 4)
+
 ;; initialize the package manager
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -24,19 +29,28 @@
 	:config
 	(which-key-mode))
 
+(use-package neotree
+  :ensure t)
+
 ;; Set default font
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 140 :family "Consolas")))))
+ '(default ((t (:height 160 :family "Consolas")))))
 
 ;; enable the acme color theme
-(use-package acme-theme
+;; (use-package acme-theme
+;;   :ensure t
+;;   :config
+;;   (load-theme 'acme t))
+
+;; enable the zenburn theme (dark theme)
+(use-package zenburn-theme
   :ensure t
   :config
-  (load-theme 'acme t))
+  (load-theme 'zenburn t))
 
 ;; functions to move the current line up or down
 (defun move-line-up ()
@@ -74,4 +88,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(exec-path-from-shell go-mode acme-theme which-key use-package try)))
+   '(ample-theme zenburn-theme neotree exec-path-from-shell go-mode acme-theme which-key use-package try)))
