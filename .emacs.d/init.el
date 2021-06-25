@@ -2,6 +2,7 @@
 (global-display-line-numbers-mode) ;; show line numbers
 (global-hl-line-mode +1) ;; highlight the current line
 (electric-pair-mode 1) ;; auto close bracket insertion
+(show-paren-mode t) ;; show matching parens/brackets
 
 (setq-default indent-tabs-mode nil) ;; no tabs for indentation
 ;; set tab width to 4 spaces
