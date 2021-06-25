@@ -1,6 +1,7 @@
 (tool-bar-mode -1) ;; hide the toolbar
 (global-display-line-numbers-mode) ;; show line numbers
 (global-hl-line-mode +1) ;; highlight the current line
+(electric-pair-mode 1) ;; auto close bracket insertion
 
 (setq-default indent-tabs-mode nil) ;; no tabs for indentation
 ;; set tab width to 4 spaces
