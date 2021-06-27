@@ -73,6 +73,19 @@
 (global-set-key [(control super up)]  'move-line-up)
 (global-set-key [(control super down)]  'move-line-down)
 
+;; open neotree sidebar
+(global-set-key [(control shift b)] 'neotree-toggle)
+
+;; delete the current line from anywhere on the line
+(defun delete-line ()
+  "Delete the current line"
+  (interactive)
+  (move-beginning-of-line nil)
+  (kill-line)
+  (kill-line))
+
+(global-set-key [(control shift k)] 'delete-line)
+
 ;; Go
 (use-package go-mode
   :ensure t)
