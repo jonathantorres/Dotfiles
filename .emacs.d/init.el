@@ -73,6 +73,18 @@
 (global-set-key [(control super up)]  'move-line-up)
 (global-set-key [(control super down)]  'move-line-down)
 
+;; duplicate the current line
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (next-line 1)
+  (yank))
+
+(global-set-key [(super shift d)] 'duplicate-line)
+
 ;; open neotree sidebar
 (global-set-key [(control shift b)] 'neotree-toggle)
 
