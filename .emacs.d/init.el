@@ -141,9 +141,9 @@
 (use-package multiple-cursors
   :ensure t)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key [(super shift down)] 'mc/mark-next-like-this)
+(global-set-key [(super shift up)] 'mc/mark-previous-like-this)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
