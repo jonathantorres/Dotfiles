@@ -4,6 +4,10 @@
 (electric-pair-mode 1) ;; auto close bracket insertion
 (show-paren-mode t) ;; show matching parens/brackets
 
+;; scrolling control
+(setq-default mouse-wheel-scroll-amount '(1 ((shift) . 1)((control) . nil)))
+(setq-default mouse-wheel-progressive-speed nil)
+
 (setq-default indent-tabs-mode nil) ;; no tabs for indentation
 ;; set tab width to 4 spaces
 (setq-default tab-width 4)
