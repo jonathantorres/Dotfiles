@@ -3,6 +3,7 @@
 (global-hl-line-mode +1) ;; highlight the current line
 (electric-pair-mode 1) ;; auto close bracket insertion
 (show-paren-mode t) ;; show matching parens/brackets
+(setq ring-bell-function 'ignore) ;; no sounds
 
 ;; scrolling control
 (setq-default mouse-wheel-scroll-amount '(1 ((shift) . 1)((control) . nil)))
@@ -136,6 +137,14 @@
 ;; For M-x history
 (use-package smex
   :ensure t)
+
+;; for auto completion
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)))
 
 ;; Multiple cursors
 (use-package multiple-cursors
