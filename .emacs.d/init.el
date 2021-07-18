@@ -4,6 +4,7 @@
 (electric-pair-mode 1) ;; auto close bracket insertion
 (show-paren-mode t) ;; show matching parens/brackets
 (setq ring-bell-function 'ignore) ;; no sounds
+(setq make-backup-files nil) ;; no backup files
 
 ;; scrolling control
 (setq-default mouse-wheel-scroll-amount '(1 ((shift) . 1)((control) . nil)))
