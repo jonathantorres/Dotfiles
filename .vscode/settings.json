@@ -1,0 +1,19 @@
+{
+    "editor.wordWrap": "on",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "files.insertFinalNewline": true,
+    "window.menuBarVisibility": "hidden",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.settings.editor": "json",
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top"
+}
