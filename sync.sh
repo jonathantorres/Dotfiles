@@ -6,6 +6,10 @@ cp ~/.bash_profile ~/dev/dotfiles/.bash_profile
 cp ~/.bash_aliases ~/dev/dotfiles/.bash_aliases
 echo "bash settings are now synced.";
 
+# vscode settings
+cp -Rf ~/.config/Code/User/settings.json ~/dev/dotfiles/.vscode/settings.json
+echo "vscode settings are now synced.";
+
 # sublime text
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ~/dev/dotfiles/st
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ~/dev/dotfiles/st
