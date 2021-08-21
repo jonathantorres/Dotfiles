@@ -17,5 +17,8 @@
     "editor.snippetSuggestions": "top",
     "workbench.editor.showTabs": false,
     "workbench.colorTheme": "Gruvbox Dark Hard",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false
 }
