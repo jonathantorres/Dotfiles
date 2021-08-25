@@ -12,6 +12,7 @@ set guicursor=n-v-c-i:block-Cursor "use block cursor in gui mode
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
 set expandtab "tabs are spaces
+set shiftwidth=4 "use 4 spaces when tabbing in normal mode
 set showcmd "show command in bottom bar
 set wildmenu "visual autocomplete for command menu
 set lazyredraw "redraw only when we need to.
