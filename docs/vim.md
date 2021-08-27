@@ -36,6 +36,8 @@
 `dd` - delete line  
 `dw` - delete word
 `d$` - delete to the end of the line
+`diw` - delete inside word
+`di{` - delete inside curly brace, you can use any other characters
 `yy` - yank (copy) line  
 `c` - change
 `r` - replace
@@ -43,7 +45,7 @@
 `p` - put  
 `.` - replace last change or delete
 `u` - undo  
-`^r` - redo  
+`^r` - redo 
 
 
 #### Search
@@ -52,6 +54,14 @@
 `N` - repeat last search backwards
 `%` - find matching parenthesis or bracket []{}
 
+#### Buffers
+`:ls` - list buffers  
+`:buf {num}` - Switch to the buffer with the number {num}
+`:b <TAB>` - Keep pressing tabs to see the buffer names
+`:b <name>` - Switch to the buffer by name
+`:bn` - Switch to the next buffer
+`:bp` - Switch to the previous buffer
+`:bd [num, name]` - Unload the buffer, it also removes it from the buffer list
 
 #### Windows
 `:split` - split current buffer horizontally  
@@ -68,5 +78,3 @@
 `:e {filename}` - open another file in the current buffer  
 `:r {filename}` - read contents of file in the current buffer  
 `^^` - Switching between files  
-`:ls` - list buffers  
-`:buf {num}` - Switch to the buffer with the number {num}
