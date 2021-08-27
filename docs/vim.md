@@ -29,21 +29,21 @@
 
 
 #### Editing
-`x` - delete character
-`a` - insert after the text cursor
-`shift`+`a` - append to the end of the line
-`o` - insert a new line below the cursor
+`x` - delete character 
+`a` - insert after the text cursor 
+`shift`+`a` - append to the end of the line 
+`o` - insert a new line below the cursor 
 `dd` - delete line  
-`dw` - delete word
-`d$` - delete to the end of the line
-`diw` - delete inside word
-`di{` - delete inside curly brace, you can use any other characters
+`dw` - delete word 
+`d$` - delete to the end of the line 
+`diw` - delete inside word 
+`di{` - delete inside curly brace, you can use any other characters 
 `yy` - yank (copy) line  
-`c` - change
-`r` - replace
-`R` - replace mode, replaces more than 1 character
+`c` - change 
+`r` - replace 
+`R` - replace mode, replaces more than 1 character 
 `p` - put  
-`.` - replace last change or delete
+`.` - replace last change or delete 
 `u` - undo  
 `^r` - redo 
 
