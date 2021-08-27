@@ -10,9 +10,9 @@
 `h` - move left 1 character  
 `l` - move right 1 character  
 `j` - move down 1 line  
-`k` - move up 1 line 
-`w` - move forward 1 word
-`e` - move forward to the end of the next word
+`k` - move up 1 line  
+`w` - move forward 1 word  
+`e` - move forward to the end of the next word  
 `b` - move back 1 word  
 `$` - move to the end of the line  
 `0` - move to the beginning of the line  
@@ -29,39 +29,39 @@
 
 
 #### Editing
-`x` - delete character 
-`a` - insert after the text cursor 
-`shift`+`a` - append to the end of the line 
-`o` - insert a new line below the cursor 
+`x` - delete character  
+`a` - insert after the text cursor  
+`shift`+`a` - append to the end of the line  
+`o` - insert a new line below the cursor  
 `dd` - delete line  
-`dw` - delete word 
-`d$` - delete to the end of the line 
-`diw` - delete inside word 
-`di{` - delete inside curly brace, you can use any other characters 
+`dw` - delete word  
+`d$` - delete to the end of the line  
+`diw` - delete inside word  
+`di{` - delete inside curly brace, you can use any other characters  
 `yy` - yank (copy) line  
-`c` - change 
-`r` - replace 
-`R` - replace mode, replaces more than 1 character 
+`c` - change  
+`r` - replace  
+`R` - replace mode, replaces more than 1 character  
 `p` - put  
-`.` - replace last change or delete 
+`.` - replace last change or delete  
 `u` - undo  
-`^r` - redo 
+`^r` - redo  
 
 
 #### Search
 `/pattern` - search for pattern  
-`n` - repeat last search forward
-`N` - repeat last search backwards
-`%` - find matching parenthesis or bracket []{}
+`n` - repeat last search forward  
+`N` - repeat last search backwards  
+`%` - find matching parenthesis or bracket []{}  
 
 #### Buffers
 `:ls` - list buffers  
-`:buf {num}` - Switch to the buffer with the number {num}
-`:b <TAB>` - Keep pressing tabs to see the buffer names
-`:b <name>` - Switch to the buffer by name
-`:bn` - Switch to the next buffer
-`:bp` - Switch to the previous buffer
-`:bd [num, name]` - Unload the buffer, it also removes it from the buffer list
+`:buf {num}` - Switch to the buffer with the number {num}  
+`:b <TAB>` - Keep pressing tabs to see the buffer names  
+`:b <name>` - Switch to the buffer by name  
+`:bn` - Switch to the next buffer  
+`:bp` - Switch to the previous buffer  
+`:bd [num, name]` - Unload the buffer, it also removes it from the buffer list  
 
 #### Windows
 `:split` - split current buffer horizontally  
