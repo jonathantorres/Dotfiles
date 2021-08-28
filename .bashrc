@@ -28,6 +28,9 @@ shopt -s checkwinsize
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# use vim mode
+set -o vi
+
 # Language
 export LANG=en_US.UTF-8
 
