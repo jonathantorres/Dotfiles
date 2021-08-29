@@ -18,14 +18,14 @@
 `0` - move to the beginning of the line  
 `[[` - move to previous code block  
 `]]` - move to next code block  
+`{{` - move to next empty line  
+`}}` - move to previous empty line  
 `gg` - move to beginning of file  
 `G` - move to the end of the file  
 `1G` - move to first line of file  
 `50G`- move to line 50 of the file  
 `:50` - move to line 50 of the file  
 `z.` - move screen with the current line on the center  
-`<` - indent to the left  
-`>` - indent to the right  
 
 
 #### Editing
@@ -39,13 +39,26 @@
 `diw` - delete inside word  
 `di{` - delete inside curly brace, you can use any other characters  
 `yy` - yank (copy) line  
+`Y` - yank (copy) line  
 `c` - change  
 `r` - replace  
 `R` - replace mode, replaces more than 1 character  
 `p` - put  
-`.` - replace last change or delete  
+`.` - repeat the last edit  
 `u` - undo  
 `^r` - redo  
+`V` - Select the current line  
+`gv` - Repeat the last selection  
+
+
+#### Indentation
+`<<` - indent current line to the left  
+`>>` - indent current line to the right  
+`<` - indent selection to the left  
+`>` - indent selection to the right  
+`==` - auto indent the current line  
+`=` - auto indent the current selection  
+`=i}` - auto indent inside the curly brace  
 
 
 #### Search
@@ -53,6 +66,7 @@
 `n` - repeat last search forward  
 `N` - repeat last search backwards  
 `%` - find matching parenthesis or bracket []{}  
+
 
 #### Buffers
 `:ls` - list buffers  
@@ -62,6 +76,7 @@
 `:bn` - Switch to the next buffer  
 `:bp` - Switch to the previous buffer  
 `:bd [num, name]` - Unload the buffer, it also removes it from the buffer list  
+
 
 #### Windows
 `:split` - split current buffer horizontally  
