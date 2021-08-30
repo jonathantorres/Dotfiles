@@ -1,6 +1,7 @@
 ### VIM
 
 `i` - enter insert mode  
+`I` - move to the beginning of the line and enable insert mode  
 `ESC` - exit insert mode into command mode  
 `v` - enter visual mode  
 `:` - open ex command  
@@ -26,24 +27,35 @@
 `50G`- move to line 50 of the file  
 `:50` - move to line 50 of the file  
 `z.` - move screen with the current line on the center  
+`f{c}` - find the character `c` in the current line  
+`F{c}` - find the character `c` backwards in the current line  
+`t{c}` - find the character before `c` in the current line  
+`T{c}` - find the character before `c` backwards in the current line  
+`;` - repeat the last find  
+`,` - repeat the last find backwards  
 
 
 #### Editing
 `x` - delete character  
 `a` - insert after the text cursor  
-`shift`+`a` - append to the end of the line  
+`A`- append to the end of the line  
 `o` - insert a new line below the cursor  
+`O` - insert a new line above the cursor  
 `dd` - delete line  
+`S` - delete line and enable insert mode  
 `dw` - delete word  
 `d$` - delete to the end of the line  
+`D` - delete to the end of the line  
 `diw` - delete inside word  
 `di{` - delete inside curly brace, you can use any other characters  
 `yy` - yank (copy) line  
 `Y` - yank (copy) line  
 `c` - change  
+`C` - change the current line  
 `r` - replace  
 `R` - replace mode, replaces more than 1 character  
 `p` - put  
+`P` - put above  
 `.` - repeat the last edit  
 `u` - undo  
 `^r` - redo  
@@ -66,6 +78,8 @@
 `n` - repeat last search forward  
 `N` - repeat last search backwards  
 `%` - find matching parenthesis or bracket []{}  
+`*` - search forward by the word in the cursor  
+`#` - search backwards by the word in the cursor  
 
 
 #### Buffers
