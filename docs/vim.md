@@ -22,8 +22,10 @@
 `]]` - move to next code block  
 `{{` - move to next empty line  
 `}}` - move to previous empty line  
-`^d` - scroll down (half a page)
-`^u` - scroll up (half a page)
+`^d` - scroll down (half a page)  
+`^u` - scroll up (half a page)  
+`^y` - scroll up (one line)  
+`^e` - scroll down (one line)  
 `gg` - move to beginning of file  
 `G` - move to the end of the file  
 `50G`- move to line 50 of the file  
