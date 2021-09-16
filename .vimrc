@@ -52,7 +52,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'olivertaylor/vacme'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
 "Plugin 'darrikonn/vim-gofmt'
 call vundle#end() "end vundle configuration
@@ -64,13 +65,16 @@ filetype indent on "load filetype-specific indent files
 set background=dark
 colorscheme gruvbox
 
-" CtrlP settings
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|o)$',
-  \ }
+" fzf settings
+let g:fzf_preview_window = [] " no preview window
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
+nnoremap <c-p> :GFiles<CR>
+nnoremap <c-p>f :Files<CR>
+nnoremap <c-p>p :Buffers<CR>
+nnoremap <c-p>@ :Tags<CR>
+
+" toggle nerdtree
+nnoremap <c-b> :NERDTreeToggle<CR>
 
 " Leader key stuff to research and enable at some point
 "nmap <leader>b :NERDTreeToggle<CR>
