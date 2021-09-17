@@ -19,7 +19,7 @@
 `b` - move back 1 word  
 `$` - move to the end of the line  
 `0` - move to the beginning of the line  
-`^` - move to the first non-whitespace character of the line
+`^` - move to the first non-whitespace character of the line  
 `+` - move to first character of next line  
 `-` - move to first character of previous line  
 `[[` - move to previous code block  
