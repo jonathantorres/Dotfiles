@@ -1,9 +1,10 @@
 ### VIM
 
 `i` - enter insert mode  
-`I` - move to the beginning of the line and enable insert mode  
 `ESC` - exit insert mode into command mode  
 `v` - enter visual mode  
+`V` - enter visual line mode  
+`^v` - enter visual block mode  
 `:` - open ex command  
 
 
@@ -13,11 +14,14 @@
 `j` - move down 1 line  
 `k` - move up 1 line  
 `w` - move forward 1 word  
+`W` - move forward 1 word (not counting punctuation)  
 `e` - move forward to the end of the next word  
 `b` - move back 1 word  
 `$` - move to the end of the line  
 `0` - move to the beginning of the line  
 `^` - move to the first non-whitespace character of the line
+`+` - move to first character of next line  
+`-` - move to first character of previous line  
 `[[` - move to previous code block  
 `]]` - move to next code block  
 `{{` - move to next empty line  
@@ -41,10 +45,14 @@
 
 #### Editing
 `x` - delete character  
+`s` - delete character and enter insert mode  
 `a` - insert after the text cursor  
 `A`- append to the end of the line  
 `o` - insert a new line below the cursor  
 `O` - insert a new line above the cursor  
+`~` - toggle case  
+`I` - move to the beginning of the line and enable insert mode  
+`J` - join current and next line  
 `dd` - delete line  
 `S` - delete line and enable insert mode  
 `dw` - delete word  
@@ -62,6 +70,7 @@
 `P` - put above  
 `.` - repeat the last edit  
 `u` - undo  
+`U` - restore line to original state  
 `^r` - redo  
 `V` - Select the current line  
 `gv` - Repeat the last selection  
