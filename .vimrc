@@ -56,11 +56,14 @@ Plugin 'olivertaylor/vacme'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
-Plugin 'fatih/vim-go'
-"Plugin 'darrikonn/vim-gofmt'
+Plugin 'darrikonn/vim-gofmt'
 call vundle#end() "end vundle configuration
 
-filetype indent on "load filetype-specific indent files
+filetype plugin indent on "load filetype-specific indent files
+
+" Go settings
+" research how to run :GoFmt and :GoImports when
+" saving a .go file!
 
 " Color Scheme settings
 "dark is better, set to light when using a light color scheme
