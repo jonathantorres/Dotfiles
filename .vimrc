@@ -23,6 +23,7 @@ set foldlevelstart=10 "open most folds by default
 set foldnestmax=10 "10 nested fold max
 set foldmethod=indent "fold based on indent level
 set scrolloff=5 "number of lines to keep above/below the cursor
+set listchars=tab:→\ ,space:·,trail:·,eol:¬
 
 " setttings to research and enable at some point
 "set autoindent
@@ -55,6 +56,7 @@ Plugin 'olivertaylor/vacme'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
+Plugin 'fatih/vim-go'
 "Plugin 'darrikonn/vim-gofmt'
 call vundle#end() "end vundle configuration
 
