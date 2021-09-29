@@ -81,7 +81,19 @@ nnoremap <c-p>@ :Tags<CR>
 " toggle nerdtree
 nnoremap <c-b> :NERDTreeToggle<CR>
 
+" move lines up and down
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
 " Leader key stuff to research and enable at some point
+"nmap <leader>p :GFiles<CR>
+"nmap <leader>f :Files<CR>
+"nmap <leader>o :Buffers<CR>
+"nmap <leader>a :Tags<CR>
 "nmap <leader>b :NERDTreeToggle<CR>
 "nmap <leader>p :CtrlP<CR>
 "nmap <leader>o :CtrlPBuffer<CR>
