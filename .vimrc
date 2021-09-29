@@ -76,7 +76,7 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true
 nnoremap <c-p> :GFiles<CR>
 nnoremap <c-p>f :Files<CR>
 nnoremap <c-p>p :Buffers<CR>
-nnoremap <c-p>@ :Tags<CR>
+nnoremap <c-p>@ :BTags<CR>
 
 " toggle nerdtree
 nnoremap <c-b> :NERDTreeToggle<CR>
@@ -93,7 +93,7 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 "nmap <leader>p :GFiles<CR>
 "nmap <leader>f :Files<CR>
 "nmap <leader>o :Buffers<CR>
-"nmap <leader>a :Tags<CR>
+"nmap <leader>a :BTags<CR>
 "nmap <leader>b :NERDTreeToggle<CR>
 "nmap <leader>p :CtrlP<CR>
 "nmap <leader>o :CtrlPBuffer<CR>
