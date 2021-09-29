@@ -122,7 +122,7 @@
 #### Marks
 `m{x}` - Mark the current line, store it in the mark `x`  
 `'{x}` - Go to the mark `x`  
-``{x}`` - Go to the character that was marked by `x`  
+`` `{x} `` - Go to the character that was marked by `x`  
 
 
 #### Other
