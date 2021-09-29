@@ -26,6 +26,9 @@
 `]]` - move to next code block  
 `{{` - move to next empty line  
 `}}` - move to previous empty line  
+`H` - move to the highest line on the screen  
+`M` - move to the middle line on the screen  
+`L` - move to the lowest line on the screen  
 `^d` - scroll down (half a page)  
 `^u` - scroll up (half a page)  
 `^y` - scroll up (one line)  
@@ -114,6 +117,12 @@
 `^w=` - resize windows equally  
 `:tabnew {filename}` - open a new tab with the specified file  
 `gt` - switch between tabs  
+
+
+#### Marks
+`m{x}` - Mark the current line, store it in the mark `x`  
+`'{x}` - Go to the mark `x`  
+``{x}`` - Go to the character that was marked by `x`  
 
 
 #### Other
