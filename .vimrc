@@ -73,13 +73,17 @@ colorscheme gruvbox
 " fzf settings
 let g:fzf_preview_window = [] " no preview window
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
-nnoremap <c-p> :GFiles<CR>
-nnoremap <c-p>f :Files<CR>
-nnoremap <c-p>p :Buffers<CR>
-nnoremap <c-p>@ :BTags<CR>
+
+" leader key and mappings
+let mapleader = " "
+nnoremap <leader>p :GFiles<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>o :Buffers<CR>
+nnoremap <leader>a :BTags<CR>
+nnoremap <leader>w <c-w>w
 
 " toggle nerdtree
-nnoremap <c-b> :NERDTreeToggle<CR>
+nnoremap <leader>b :NERDTreeToggle<CR>
 
 " move lines up and down
 nnoremap <C-j> :m .+1<CR>==
@@ -89,11 +93,9 @@ inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
-" Leader key stuff to research and enable at some point
-"nmap <leader>p :GFiles<CR>
-"nmap <leader>f :Files<CR>
-"nmap <leader>o :Buffers<CR>
-"nmap <leader>a :BTags<CR>
-"nmap <leader>b :NERDTreeToggle<CR>
-"nmap <leader>p :CtrlP<CR>
-"nmap <leader>o :CtrlPBuffer<CR>
+" old mappings, leaving here for now
+"nnoremap <c-p> :GFiles<CR>
+"nnoremap <c-p>f :Files<CR>
+"nnoremap <c-p>p :Buffers<CR>
+"nnoremap <c-p>@ :BTags<CR>
+"nnoremap <c-b> :NERDTreeToggle<CR>
