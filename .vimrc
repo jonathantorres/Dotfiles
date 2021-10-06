@@ -12,23 +12,22 @@ set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
 set expandtab "tabs are spaces
 set shiftwidth=4 "use 4 spaces when tabbing in normal mode
+set autoindent "use same indenting when adding a new line
+set smartindent "be smarter about autoindenting a new line
 set showcmd "show command in bottom bar
 set wildmenu "visual autocomplete for command menu
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip "ignore these file patterns
 set lazyredraw "redraw only when we need to.
 set incsearch "search as characters are entered
 set hlsearch "highlight matches
+set smartcase "if a search has uppercase characters, override the ignore case
+set ignorecase "ignore casing when doing a search
 set foldenable "enable folding
 set foldlevelstart=10 "open most folds by default
 set foldnestmax=10 "10 nested fold max
 set foldmethod=indent "fold based on indent level
 set scrolloff=5 "number of lines to keep above/below the cursor
 set listchars=tab:→\ ,space:·,trail:·,eol:¬
-
-" setttings to research and enable at some point
-"set autoindent
-"set smartindent
-"set smartcase
 
 " gui cursor settings
 set guicursor=n-v-c:block-Cursor 
