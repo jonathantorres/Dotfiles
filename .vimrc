@@ -29,13 +29,15 @@ set foldmethod=indent "fold based on indent level
 set scrolloff=5 "number of lines to keep above/below the cursor
 set listchars=tab:→\ ,space:·,trail:·,eol:¬
 
-" gui cursor settings
-set guicursor=n-v-c:block-Cursor 
-set guicursor+=i:ver25-iCursor
-
 "options for gui version
 if has("gui_running")
-	set guioptions -=T "remove toolbar
+    "gui cursor settings
+    set guicursor=n-v-c:block-Cursor "block cursor in normal, visual and command mode
+    set guicursor+=i:ver25-iCursor "vertical cursor in insert mode
+    set guioptions -=T "remove toolbar
+    set guioptions -=r "remove right scrollbar
+    set guioptions -=L "remove left scrollbar
+
 	"use Consolas font and a bigger font size
 	if has("gui_gtk2") || has("gui_gtk3")
 		set guifont=Consolas\ 13
