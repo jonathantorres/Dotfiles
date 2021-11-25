@@ -28,9 +28,6 @@ shopt -s checkwinsize
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-# use vim mode
-set -o vi
-
 # Language
 export LANG=en_US.UTF-8
 
@@ -45,7 +42,8 @@ export PATH="/usr/local/opt/php@7.3/bin:$PATH"
 export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
+export PATH="/usr/local/opt/go@1.15/bin:$PATH"
+#export PATH="/usr/local/go/bin:$PATH"
 
 # Go
 export GOPATH="$HOME/go"
