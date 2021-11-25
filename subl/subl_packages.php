@@ -16,7 +16,7 @@ foreach ($packages['installed_packages'] as $i => $package) {
     $output .= '- ' . $package . PHP_EOL;
 }
 
-$output_path = '/Users/jonathantorres/dev/dotfiles/st/installed_packages.md';
+$output_path = '/Users/jonathantorres/dev/dotfiles/subl/installed_packages.md';
 $output_file = fopen($output_path, 'w');
 fwrite($output_file, $output);
 fclose($output_file);
