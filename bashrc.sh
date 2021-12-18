@@ -33,24 +33,13 @@ export LANG=en_US.UTF-8
 
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
-export PATH="/usr/local/opt/php@7.3/bin:$PATH"
-export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export PATH="/usr/local/opt/node@10/bin:$PATH"
-export PATH="/usr/local/opt/go@1.15/bin:$PATH"
-#export PATH="/usr/local/go/bin:$PATH"
 
 # Go
 export GOPATH="$HOME/go"
-
-# Plan9
-export PLAN9="/usr/local/plan9"
-export PATH="$PATH:$PLAN9/bin"
 
 # Editor
 export VISUAL=vim
