@@ -124,3 +124,15 @@ Start the php-fpm daemon
 ```bash
 php-fpm
 ```
+
+## Valgrind
+Download sources from https://valgrind.org, and extract to your Desktop. Configure the installation with `./configure`
+```bash
+./configure --prefix=/usr/local/valgrind
+```
+
+Next, compile the sources and install with `make`
+```bash
+make
+sudo make install
+```
