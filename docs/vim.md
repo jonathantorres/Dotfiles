@@ -38,6 +38,7 @@
 `50G`- move to line 50 of the file  
 `:50` - move to line 50 of the file  
 `z.` - move screen with the current line on the center  
+`zz` - same as `z.` but leave the cursor in the same column  
 `f{c}` - find the character `c` in the current line  
 `F{c}` - find the character `c` backwards in the current line  
 `t{c}` - find the character before `c` in the current line  
