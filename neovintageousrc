@@ -1,0 +1,14 @@
+" Type :help nv for help.
+set nomenu
+set nominimap
+set relativenumber
+
+let mapleader=<space>
+
+nnoremap <leader>p :ShowOverlay overlay=goto show_files=true<CR>
+nnoremap <leader>o :ShowOverlay overlay=command_palette<CR>
+nnoremap <leader>r :ShowOverlay overlay=goto text=@<CR>
+nnoremap <leader>b :ToggleSideBar<CR>
+nnoremap <leader>s :PromptSelectWorkspace<CR>
+noremap  <leader>v "+p
+noremap  <leader>c "+y
