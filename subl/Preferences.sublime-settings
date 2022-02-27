@@ -36,6 +36,7 @@
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"rulers": [80],
+	"relative_line_numbers": true,
 	"tab_size": 4,
 	"theme": "gruvbox.sublime-theme",
 	"translate_tabs_to_spaces": true,
