@@ -101,3 +101,7 @@ inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
+" multiple cursor settings
+let g:multi_cursor_next_key = 'j'
+let g:multi_cursor_skip_key = 'l'
+
