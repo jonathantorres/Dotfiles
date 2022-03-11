@@ -27,8 +27,9 @@ set foldlevelstart=10 "open most folds by default
 set foldnestmax=10 "10 nested fold max
 set foldmethod=indent "fold based on indent level
 set scrolloff=5 "number of lines to keep above/below the cursor
-set listchars=tab:→\ ,space:·,trail:·,eol:¬
 set relativenumber "enable relative line numbers
+set listchars=tab:→\ ,space:·,trail:·
+set list
 
 "options for gui version
 if has("gui_running")
