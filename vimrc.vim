@@ -60,6 +60,11 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'darrikonn/vim-gofmt'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'machakann/vim-highlightedyank'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end() "end vundle configuration
 
 filetype plugin indent on "load filetype-specific indent files
