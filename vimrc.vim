@@ -4,8 +4,10 @@ set encoding=utf-8 "use utf-8 encoding
 set noswapfile "don't create the annoying swap file
 set number "show line numbers
 set showmatch "highlight matching [{()}]
-set showmode "show the mode we are currently on
-set ruler "show the line and column number of the cursor position
+set noshowmode "don't show the mode we are on, airline takes care of this
+"set laststatus=0 "hide status line
+"set showmode "show the mode we are currently on
+"set ruler "show the line and column number of the cursor position
 set mouse=a "enable use of the mouse
 set cursorline "highlight current line
 set tabstop=4 "number of visual spaces per TAB
