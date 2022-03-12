@@ -41,12 +41,12 @@ if has("gui_running")
     set guioptions -=r "remove right scrollbar
     set guioptions -=L "remove left scrollbar
 
-	"use Consolas font and a bigger font size
-	if has("gui_gtk2") || has("gui_gtk3")
-		set guifont=Consolas\ 13
-	else
-		set guifont=Consolas:h16
-	endif
+    "use Consolas font and a bigger font size
+    if has("gui_gtk2") || has("gui_gtk3")
+        set guifont=Consolas\ 13
+    else
+        set guifont=Consolas:h16
+    endif
 endif
 
 " Use Vundle to manage plugins
