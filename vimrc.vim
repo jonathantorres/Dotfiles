@@ -65,6 +65,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-airline/vim-airline'
 call vundle#end() "end vundle configuration
 
 filetype plugin indent on "load filetype-specific indent files
@@ -81,6 +83,15 @@ colorscheme gruvbox
 " fzf settings
 let g:fzf_preview_window = [] " no preview window
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
+
+" airline settings
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.linenr = ' '
+let g:airline_symbols.whitespace = ' '
+let g:airline_symbols.maxlinenr = ' '
+let g:airline_symbols.colnr = ' :'
 
 " leader key and mappings
 let mapleader = " "
