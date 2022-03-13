@@ -64,11 +64,13 @@ Plugin 'preservim/nerdtree'
 Plugin 'darrikonn/vim-gofmt'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-obsession'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-airline/vim-airline'
+Plugin 'qpkorr/vim-bufkill'
 call vundle#end() "end vundle configuration
 
 filetype plugin indent on "load filetype-specific indent files
@@ -88,7 +90,7 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true
 
 " airline settings
 if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
+    let g:airline_symbols = {}
 endif
 let g:airline_symbols.linenr = ' '
 let g:airline_symbols.whitespace = ' '
