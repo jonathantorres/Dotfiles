@@ -76,8 +76,8 @@ call vundle#end() "end vundle configuration
 filetype plugin indent on "load filetype-specific indent files
 
 " Go settings
-" research how to run :GoFmt and :GoImports when
-" saving a .go file!
+" run :GoImports when saving a .go file
+autocmd BufWritePre *.go GoImports
 
 " Color Scheme settings
 "dark is better, set to light when using a light color scheme
