@@ -88,7 +88,8 @@ colorscheme gruvbox
 let g:fzf_preview_window = [] " no preview window
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
 
-" airline settings
+" airline settings, getting rid of some fancy characters that don't
+" render properly on the selected font of my machines
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
@@ -120,3 +121,8 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 let g:multi_cursor_next_key = 'j'
 let g:multi_cursor_skip_key = 'l'
 
+" buffkill settings
+" remove a bunch of mappings added by the plugin
+" always use :bd to actually run :BD to delete a buffer
+let g:BufKillCreateMappings = 0
+cabbrev bd <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'BD' : 'bdelete')<CR>
