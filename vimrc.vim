@@ -121,6 +121,9 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 let g:multi_cursor_next_key = 'j'
 let g:multi_cursor_skip_key = 'l'
 
+" nerdtree settings
+let NERDTreeMouseMode = 3
+
 " buffkill settings
 " remove a bunch of mappings added by the plugin
 " always use :bd to actually run :BD to delete a buffer
