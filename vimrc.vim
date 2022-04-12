@@ -105,6 +105,8 @@ nnoremap <leader>f :Files<CR>
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>r :BTags<CR>
 nnoremap <leader>w <c-w>w
+nnoremap <leader>v "+p
+vnoremap <leader>c "+y
 
 " toggle nerdtree
 nnoremap <leader>b :NERDTreeToggle<CR>
