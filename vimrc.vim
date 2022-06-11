@@ -33,6 +33,10 @@ set relativenumber "enable relative line numbers
 set listchars=tab:→\ ,space:·,trail:·
 set list
 
+" set python 2 and 3 executable path
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
+
 "options for gui version
 if has("gui_running")
     "gui cursor settings
@@ -74,6 +78,15 @@ Plugin 'qpkorr/vim-bufkill'
 call vundle#end() "end vundle configuration
 
 filetype plugin indent on "load filetype-specific indent files
+
+" clang-format settings
+" run clang format when saving a C++ file
+function ClangFormatFile()
+    let l:lines="all"
+    py3f /home/jonathan/clang-format.py
+endfunction
+autocmd BufWritePre *.cpp call ClangFormatFile()
+autocmd BufWritePre *.hpp call ClangFormatFile()
 
 " Go settings
 " run :GoImports when saving a .go file
