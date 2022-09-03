@@ -5,9 +5,6 @@ set noswapfile "don't create the annoying swap file
 set number "show line numbers
 set showmatch "highlight matching [{()}]
 set noshowmode "don't show the mode we are on, airline takes care of this
-"set laststatus=0 "hide status line
-"set showmode "show the mode we are currently on
-"set ruler "show the line and column number of the cursor position
 set mouse=a "enable use of the mouse
 set cursorline "highlight current line
 set tabstop=4 "number of visual spaces per TAB
@@ -70,8 +67,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-obsession'
 Plugin 'machakann/vim-highlightedyank'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'jiangmiao/auto-pairs'
+Plugin 'LunarWatcher/auto-pairs'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-airline/vim-airline'
 Plugin 'qpkorr/vim-bufkill'
@@ -131,10 +127,6 @@ inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
-
-" multiple cursor settings
-let g:multi_cursor_next_key = 'j'
-let g:multi_cursor_skip_key = 'l'
 
 " nerdtree settings
 let NERDTreeMouseMode = 3
