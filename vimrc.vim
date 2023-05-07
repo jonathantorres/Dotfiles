@@ -81,6 +81,8 @@ function ClangFormatFile()
     let l:lines="all"
     py3f /home/jonathan/clang-format.py
 endfunction
+autocmd BufWritePre *.c call ClangFormatFile()
+autocmd BufWritePre *.h call ClangFormatFile()
 autocmd BufWritePre *.cpp call ClangFormatFile()
 autocmd BufWritePre *.hpp call ClangFormatFile()
 
