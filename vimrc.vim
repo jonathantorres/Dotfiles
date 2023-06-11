@@ -29,6 +29,12 @@ set scrolloff=5 "number of lines to keep above/below the cursor
 set relativenumber "enable relative line numbers
 set listchars=tab:→\ ,space:·,trail:·
 set list
+set timeoutlen=1000
+set ttimeoutlen=0
+
+" use a line cursor in insert mode and a block cursor in normal mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 " set python 2 and 3 executable path
 let g:python_host_prog = '/usr/bin/python2'
