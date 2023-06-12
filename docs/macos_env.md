@@ -136,3 +136,14 @@ Next, compile the sources and install with `make`
 make
 sudo make install
 ```
+
+## VIM
+Clone the source code from https://github.com/vim/vim, and extract to your Desktop or home directory. Configure the installation with `./configure`. By default, it will install the binary on `/usr/local/bin`
+```bash
+./configure --enable-pythoninterp=yes
+```
+
+Next, compile the sources and install with `make`
+```bash
+sudo make install
+```
