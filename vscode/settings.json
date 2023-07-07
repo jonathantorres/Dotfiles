@@ -1,24 +1,73 @@
 {
-    "breadcrumbs.enabled": false,
     "editor.wordWrap": "on",
-    "editor.cursorStyle": "block",
     "editor.fontFamily": "Consolas",
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
+    "explorer.autoReveal": false,
     "files.insertFinalNewline": true,
     "workbench.activityBar.visible": false,
     "workbench.settings.editor": "json",
     "editor.detectIndentation": true,
     "editor.tabSize": 4,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": false,
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
+    "editor.lineNumbers": "relative",
     "workbench.editor.showTabs": false,
     "workbench.colorTheme": "Gruvbox Dark Hard",
-    "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
     "workbench.startupEditor": "none",
-    "workbench.tips.enabled": false
+    "workbench.tips.enabled": false,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.highlightedyank.enable": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
+        {
+            "before": ["<leader>", "v"],
+            "commands": ["editor.action.clipboardPasteAction"]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "after": ["<C-w>", "w"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["projectManager.listProjects"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workbench.action.newWindow"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.clipboardCopyAction"]
+        }
+    ],
+    "breadcrumbs.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"    },
+    "window.menuBarVisibility": "compact",
 }

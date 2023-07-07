@@ -1,5 +1,14 @@
 ## Installed Extensions
-- Sublime Text Keymap and Settings
-- C/C++
-- Go
+- XML Tools
+- Vim
+- SQL Formatter
+- SFTP
+- Project Manager
+- PHP Symbols
+- JSON Formatter
 - Gruvbox Theme
+- Doxygen Documentation Generator
+- C/C++
+- C/C++ Themes
+- C/C++ Extension Pack
+- Better C++ Syntax

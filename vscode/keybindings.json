@@ -1,0 +1,4 @@
+[
+    { "key": "space o", "command": "workbench.action.showCommands", "when": "editorIsOpen == false" },
+    { "key": "space p", "command": "workbench.action.showCommands", "when": "editorIsOpen == false" }
+]
