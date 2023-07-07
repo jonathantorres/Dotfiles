@@ -4,7 +4,6 @@ set encoding=utf-8 "use utf-8 encoding
 set noswapfile "don't create the annoying swap file
 set number "show line numbers
 set showmatch "highlight matching [{()}]
-set noshowmode "don't show the mode we are on, airline takes care of this
 set mouse=a "enable use of the mouse
 set cursorline "highlight current line
 set tabstop=4 "number of visual spaces per TAB
@@ -29,12 +28,9 @@ set scrolloff=5 "number of lines to keep above/below the cursor
 set relativenumber "enable relative line numbers
 set listchars=tab:→\ ,space:·,trail:·
 set list
+set ruler
 set timeoutlen=1000
 set ttimeoutlen=0
-
-" use a line cursor in insert mode and a block cursor in normal mode
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
 
 " set python 2 and 3 executable path
 let g:python_host_prog = '/usr/bin/python2'
@@ -58,6 +54,17 @@ if has("gui_running")
     endif
 endif
 
+if has("nvim")
+    " bad habits
+    unmap Y
+else
+    " good old vim
+    " use a line cursor in insert mode and a block cursor in normal and replace mode
+    let &t_SI = "\e[5 q"
+    let &t_SR = "\e[ q"
+    let &t_EI = "\e[ q"
+endif
+
 " Use Vundle to manage plugins
 filetype off "required for bundle
 "set the runtime path to include Vundle and initialize
@@ -75,7 +82,6 @@ Plugin 'tpope/vim-obsession'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'LunarWatcher/auto-pairs'
 Plugin 'vim-scripts/AutoComplPop'
-Plugin 'vim-airline/vim-airline'
 Plugin 'qpkorr/vim-bufkill'
 call vundle#end() "end vundle configuration
 
@@ -104,16 +110,6 @@ colorscheme gruvbox
 " fzf settings
 let g:fzf_preview_window = [] " no preview window
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
-
-" airline settings, getting rid of some fancy characters that don't
-" render properly on the selected font of my machines
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.linenr = ' '
-let g:airline_symbols.whitespace = ' '
-let g:airline_symbols.maxlinenr = ' '
-let g:airline_symbols.colnr = ' :'
 
 " leader key and mappings
 let mapleader = " "
