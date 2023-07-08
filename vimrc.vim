@@ -54,19 +54,14 @@ if has("gui_running")
     endif
 endif
 
-if has("nvim")
-    " bad habits
-    unmap Y
-else
-    " good old vim
-    " use a line cursor in insert mode and a block cursor in normal and replace mode
-    let &t_SI = "\e[5 q"
-    let &t_SR = "\e[ q"
-    let &t_EI = "\e[ q"
-endif
+" use a line cursor in insert mode and a block cursor in normal and replace mode
+let &t_SI = "\e[5 q"
+let &t_SR = "\e[ q"
+let &t_EI = "\e[ q"
 
 " Use Vundle to manage plugins
 filetype off "required for bundle
+
 "set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -85,10 +80,11 @@ Plugin 'vim-scripts/AutoComplPop'
 Plugin 'qpkorr/vim-bufkill'
 call vundle#end() "end vundle configuration
 
-filetype plugin indent on "load filetype-specific indent files
+"load filetype-specific indent files
+filetype plugin indent on
 
 " clang-format settings
-" run clang format when saving a C++ file
+" run clang format when saving a C or C++ file
 function ClangFormatFile()
     let l:lines="all"
     py3f /home/jonathan/clang-format.py
