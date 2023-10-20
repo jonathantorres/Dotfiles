@@ -32,6 +32,7 @@ set list
 set ruler
 set timeoutlen=1000
 set ttimeoutlen=0
+set autoread
 
 " set python 2 and 3 executable path
 let g:python_host_prog = '/usr/bin/python2'
