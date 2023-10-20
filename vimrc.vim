@@ -27,6 +27,7 @@ set foldmethod=indent "fold based on indent level
 set scrolloff=5 "number of lines to keep above/below the cursor
 set relativenumber "enable relative line numbers
 set listchars=tab:→\ ,space:·,trail:·
+set shortmess-=S "display amount of matches in a search
 set list
 set ruler
 set timeoutlen=1000
