@@ -95,6 +95,7 @@ autocmd BufWritePre *.c call ClangFormatFile()
 autocmd BufWritePre *.h call ClangFormatFile()
 autocmd BufWritePre *.cpp call ClangFormatFile()
 autocmd BufWritePre *.hpp call ClangFormatFile()
+autocmd BufWritePre *.js call ClangFormatFile()
 
 " Go settings
 " run :GoImports when saving a .go file
