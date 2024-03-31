@@ -28,7 +28,7 @@ set scrolloff=5 "number of lines to keep above/below the cursor
 set relativenumber "enable relative line numbers
 set listchars=tab:→\ ,space:·,trail:·
 set shortmess-=S "display amount of matches in a search
-set list
+" set list
 set ruler
 set timeoutlen=1000
 set ttimeoutlen=0
@@ -68,7 +68,6 @@ filetype off "required for bundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
@@ -104,7 +103,7 @@ autocmd BufWritePre *.go GoImports
 " Color Scheme settings
 "dark is better, set to light when using a light color scheme
 set background=dark
-colorscheme gruvbox
+colorscheme habamax
 
 " fzf settings
 let g:fzf_preview_window = [] " no preview window
