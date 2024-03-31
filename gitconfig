@@ -5,8 +5,6 @@
 [user]
     name = Jonathan Torres
     email = jonathantorres41@gmail.com
-[core]
-    excludesfile = /Users/jonathantorres/.gitignore_global
 [push]
     default = simple
 [pull]
@@ -21,6 +19,7 @@
     required = true
 [grep]
     lineNumber = true
-
+[core]
+	excludesFile = ~/.gitignore_global
 [init]
 	defaultBranch = master
